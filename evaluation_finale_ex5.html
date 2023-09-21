@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Jarditou</title>
+    <link rel="stylesheet" href="assets/css/index.css" />
+  </head>
+  <body>
+    <header>
+      <img src=assets/img/jarditou_logo.jpg alt="Jarditou, tout le jardin"
+      title="Jarditou" id="logo"> Tout le jardin
+    </header>
+
+    <nav>
+      <div class="menu">
+      <a href="index.html" title="accueil">Accueil</a>
+      <a href="tableau.html" title="tableau">Tableau</a>
+      <a href="contact.html" title="contact">Contact</a>
+    </div>
+    
+    <div class="promo">
+      <img src=assets/img/promotion.jpg alt="promotion" title="promotion"
+      id="promo">
+    </div>
+  </nav>
+
+    <section>
+      <h1>Contact</h1>
+      <hr />
+      <form action="" method="post"id=formulaire>
+        <p>*Ces zones sont obligatoires</p>
+        <fieldset>
+          <legend>Vos coordonnées</legend>
+          <label for="nom">Votre nom*:</label
+          ><input type="text" name="nom" id="nom" required />
+          <br>
+          <small id="er_nom"></small>
+          <p>
+            <label for="prenom">Votre prénom*:</label
+            ><input type="text" name="prenom" id="prenom" required />
+            <br>
+            <small id="er_prenom"></small>
+          </p>
+          <p>
+            <label for="sexe">Sexe*:</label>
+            <input
+              type="radio"
+              name="sexe"
+              id="sexe"
+              value="Feminin"
+              required
+              
+            />
+            Feminin
+            <input
+              type="radio"
+              name="sexe"
+              id="sexe"
+              value="Masculin"
+              required
+              
+            />Masculin
+            <br>
+            <small id="er_sexe"></small>
+          </p>
+
+          <p>
+            <label for="ddn">Date de naissance*:</label
+            ><input type="date" name="ddn" id="ddn" required />
+            <br>
+            <small id="er_ddn"></small>
+
+          </p>
+      
+          <p>
+            <label for="CP">Code postal*:</label
+            ><input type="text" name="CP" id="CP" required />
+            <br>
+            <small id="er_CP"></small>
+          </p>
+          <p>
+            <label for="adresse">Adresse:</label
+            ><input type="text" name="adresse" id="adresse" />
+            <br>
+            <small id="er_adresse"></small>
+          </p>
+          <p>
+            <label for="ville">Ville:</label
+            ><input type="text" name="ville" id="ville" />
+            <br>
+            <small id="er_ville"></small>
+          </p>
+          <p>
+            <label for="email">Email*:</label
+            ><input
+              type="text"
+              name="email"
+              id="email"
+              placeholder="dave.loper@afpa.fr"
+              required
+              
+            />
+            <br>
+            <small id="er_email"></small>
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>Votre demande</legend>
+
+          <label for="sujet">Sujet*:</label>
+          <select name="sujet" size="1" id="sujet" required >
+            <option disabled selected id="defaut">Veuillez sélectionner un sujet</option>
+            <option>Mes commandes</option>
+            <option>Question sur un produit</option>
+            <option>Réclamation</option>
+            <option>Autres</option>
+          </select>
+          <br>
+          <small id="er_sujet"></small>
+          <p>
+            <label for="question">Votre question*:</label
+            ><textarea name="question" id="question" required ></textarea>
+            <br>
+            <small id="er_question"></small>
+          </p>
+        </fieldset>
+        <input
+          type="checkbox"
+          name="traitement_informatique"
+          id="traitement_informatique"
+          value="accepte"
+          required
+          
+        />
+        <label for="traitement_informatique">*J'accepte le traitement informatique de ce formulaire</label
+        >
+        <br>
+        <small id="er_traitement_info"></small>
+        <p>
+          <input type="button" value="Envoyer" id="envoyer"/>
+          <button type="reset">Annuler</button>
+        </p>
+      </form>
+    </section>
+    <footer>
+      <a href="#" title="mention légales">Mentions légales</a>
+      <a href="#" title="horaires">Horaires</a>
+      <a href="#" title="plan_du_site">Plan du site</a>
+  
+  </footer>
+
+  <script src="evaluation_finale_ex5.js"></script>
+</body>
+</html>

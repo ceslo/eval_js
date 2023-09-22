@@ -8,12 +8,11 @@ do {
   age = window.prompt("Entrez l'âge de la personne ici");
   if (check.test(age) == false) {
     window.alert("la saisie doit etre numérique");
-  }
-  if (age < 20 && check.test(age) == true) {
+  } else if (age < 20) {
     var x = x + 1;
-  } else if (age >= 20 && age <= 40 && check.test(age) == true) {
+  } else if (age >= 20) {
     var y = y + 1;
-  } else if (check.test(age) == true) {
+  } else {
     var z = z + 1;
   }
 } while (age < 100);
